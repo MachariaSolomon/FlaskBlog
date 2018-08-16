@@ -1,0 +1,113 @@
+2018-06-22 23:37:26,292 ERROR: Exception on /register [GET] [in /home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py:1761
+Traceback (most recent call last):
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/giddy/Desktop/microblog/app/routes.py", line 58, in register
+    form=form
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/giddy/Desktop/microblog/app/templates/register.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/home/giddy/Desktop/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block "body"
+    {% block navbar %}
+  File "/home/giddy/Desktop/microblog/app/templates/base.html", line 26, in block "navbar"
+    <li><a href="{{ url_for('login') }}">Login</a></li>
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'login'. Did you mean 'logout' instead?
+2018-06-22 23:38:12,931 INFO: Microblog Startup [in /home/giddy/Desktop/microblog/app/__init__.py:46
+2018-06-22 23:40:04,683 INFO: Microblog Startup [in /home/giddy/Desktop/microblog/app/__init__.py:46
+2018-06-22 23:45:56,487 INFO: Microblog Startup [in /home/giddy/Desktop/microblog/app/__init__.py:46
+2018-06-23 00:15:08,351 INFO: Microblog Startup [in /home/giddy/Desktop/microblog/app/__init__.py:48
+2018-06-23 00:15:17,666 ERROR: Exception on /login [GET] [in /home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py:1761
+Traceback (most recent call last):
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/giddy/Desktop/microblog/app/routes.py", line 79, in login
+    form=form
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/giddy/Desktop/microblog/app/templates/base.html", line 53, in template
+    {% endblock %}
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "/home/giddy/Desktop/microblog/app/templates/login.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/giddy/Desktop/microblog/app/templates/base.html", line 53, in template
+    {% endblock %}
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 170, in parse_statements
+    self.fail_eof(end_tokens)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 104, in fail_eof
+    return self._fail_ut_eof(None, stack, lineno)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/home/giddy/Desktop/microblog/venv/lib/python3.4/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2018-06-23 00:16:30,507 INFO: Microblog Startup [in /home/giddy/Desktop/microblog/app/__init__.py:48
